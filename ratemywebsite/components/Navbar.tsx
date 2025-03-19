@@ -5,25 +5,25 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#EC5228] h-24 flex flex-row items-center justify-between">
+    <div className="bg-background h-24 flex flex-row items-center justify-between border-b-[0.1px] border-b-gray-300">
       <div className="w-[15%] flex flex-row justify-center items-center">
-        <Image src={Logo} width={75} height={50} alt="Website logo" />
-        <h2 className="text-lg font-stretch-110% font-semibold font-sans">
+        <Image src={Logo} width={45} height={45} alt="Website logo" />
+        <h2 className="text-lg text-text font-stretch-110% font-semibold font-sans">
           Rate my Website
         </h2>
       </div>
       <div className="flex flex-row justify-end w-[75%]">
-        <ul className="flex flex-row gap-x-4 font-light text-[#efefef] items-center">
+        <ul className="flex flex-row gap-x-6 font-light text-text items-center">
           <Link className="cursor-pointer" href="">
             How to
           </Link>
-          <Link className="cursor-pointer" href="">
+          <Link className="ml-6 cursor-pointer" href="">
             About
           </Link>
-          <button className="px-6 py-2 bg-[#EFEFEF] text-black rounded-md transition-colors duration-200 cursor-pointer hover:bg-[#EF9651] hover:text-white">
+          <button className="py-2 px-4 rounded-md transition-colors duration-200 cursor-pointer">
             Login
           </button>
-          <button className="px-6 py-2 bg-[#3F7D58] drop-shadow-md rounded-md transition-colors duration-200 cursor-pointer hover:bg-white hover:text-black">
+          <button className="py-2 px-4 bg-primary text-background text-md font-semibold drop-shadow-md rounded-md transition-colors duration-200 cursor-pointer hover:bg-secondary hover:text-text">
             Sign Up
           </button>
         </ul>
